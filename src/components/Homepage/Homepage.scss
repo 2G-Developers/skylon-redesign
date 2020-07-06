@@ -1,0 +1,139 @@
+#homepage {
+    position: relative;
+
+    .fullwidth-img {
+        background-image: url('../../1.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+
+    
+
+    .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0 5rem;
+        @media screen and (max-width: 600px) {
+            flex-direction: column-reverse;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .ctaButton {
+                background-color: #F38824;
+                border: 1px solid #F38824;
+                padding: 0.75rem 1.25rem;
+                font-size: 2rem;
+                box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            }
+
+            .home-heading {
+                width: 75%;
+                span {
+                    font-size: 6.5rem;
+                    background-image: linear-gradient(to right bottom, rgba(255, 160, 41, 0.85), rgba(218, 96, 25, 0.85));
+                    color: #fff;
+                    padding: 1rem 1.5rem;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 37.5em) {
+            .text-container {
+                justify-content: center;
+                text-align: center;
+
+                .home-heading {
+                    width: 100%;
+                    
+                    span {
+                        font-size: 4rem;
+                    }
+                }
+
+                .home-button {
+                    margin-top: 3rem;
+                }
+            }
+            
+         };
+
+        .form-card {
+
+            .card-body {
+                padding: 2.6rem;
+
+                h3 {
+                    font-size: 3rem;
+                }
+                
+                input {
+                    font-size: 2rem;
+                    height: 4rem; 
+                }
+
+                #formsubmit {
+                    background-color: #F38824;
+                    border: 1px solid #F38824;
+                }
+            }
+        } 
+    }
+}
+
+
+
+
+.offers-wrapper {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3b36c;
+    // width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    @media screen and (max-width: 600px) {
+        font-size: 1.5rem;
+    }
+
+    .discount-button {
+        flex: 0 1 50%;
+        background-color: #000;
+        color: #d3b36c;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .discount-text {
+        justify-self: center;
+        width: 100%;
+        font-size: 1.9rem;
+        color: #000;
+    }
+
+    .discount-number {
+        font-size: 2.5rem;
+    }
+}

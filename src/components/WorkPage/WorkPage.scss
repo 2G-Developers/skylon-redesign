@@ -1,0 +1,98 @@
+#work {
+    padding: 10rem 0 0 0;
+
+    .work-wrapper {
+
+        .work-button {
+            padding: 5rem 0;
+            .ctaButton {
+                background-color: #F38824;
+                border: 1px solid #F38824;
+                padding: 0.75rem 1.25rem;
+                font-size: 2rem;
+                box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            }
+        }
+        
+    }
+
+    .work-container {
+        display: grid;
+        grid-template-rows: repeat(2,minmax(10rem, 1fr));
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+        grid-gap: 5rem;
+        justify-content: center;
+        padding: 5rem;
+        background-color: #ef8c112e;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        .work-container {
+            grid-gap: 2rem;
+            padding: 2rem;
+            grid-template-columns: none;
+        }
+        
+     };
+
+    .work-item {
+        figure {
+            position: relative;
+            img {
+                width: 100%;
+                transform: scale(1);
+                transition: all 0.4s ease;
+                filter: blur(0.1px) brightness(60%);
+            }
+
+            figcaption {
+                color: #fff;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 3px;
+                transition: all 0.4s ease;
+                font-size: 1.5rem;
+                opacity: 1;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -40%);
+            }
+
+            &:hover img {
+                    transform: scale(1.1);
+                    filter: blur(1px) brightness(60%);
+            }
+
+            &:hover figcaption {
+                font-size: 3rem;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .work-item--1 {
+        background-image: url('../../work1.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .work-item--2 {
+        background-image: url('../../work2.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .work-item--3 {
+        background-image: url('../../work3.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .work-item--4 {
+        background-image: url('../../work4.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+}

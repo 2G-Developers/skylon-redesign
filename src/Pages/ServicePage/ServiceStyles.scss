@@ -1,0 +1,55 @@
+.services {
+    overflow: hidden;
+    &-banner {
+        
+        margin: 5rem 0 20rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 600px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-header {
+        position: relative;
+        padding: 10rem 0;
+        background-color: rgba(106, 199, 220, 0.7);
+        margin-bottom: 10rem;
+        h5 {
+            padding: 5rem;
+            font-size: 4rem;
+        }
+    }
+
+    &-content {
+        flex: 1 0 40%;
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    &-image {
+        position: relative;
+        right: -10%;
+    }
+
+    .content-left {
+        left: -10%;
+        right: 0;
+    }
+
+    .desc-right {
+        margin-left: 2rem;
+    }
+
+    .desc-left {
+        margin-right: 2rem;
+    }
+}
+
+.example {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

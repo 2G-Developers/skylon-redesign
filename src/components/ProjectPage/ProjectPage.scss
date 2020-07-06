@@ -1,0 +1,99 @@
+#projects {
+    position: relative;
+    padding: 10rem 0 10rem 0;
+
+    .slider {
+        background: #eee;
+        padding: 3rem 0;
+        color: #000;
+    }
+
+    .test-card {
+        // height: 50rem;
+        width: 100%;
+        // background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .svg-container {
+            z-index: 10;
+            #girl {
+                position: absolute;
+                width: 10rem;
+                bottom: 0;
+                left: 0;
+            }
+            @media only screen and (max-width: 37.5em) {
+                #girl {
+                    width: 5rem;
+                }
+                
+             };
+            
+
+            #boy {
+                position: absolute;
+                width: 10rem;
+                bottom: 0;
+                right: 0;
+            }
+            @media only screen and (max-width: 37.5em) {
+                #boy {
+                    width: 5rem;
+                    bottom: 0;
+                    right: 0;
+                }
+                
+             };
+        }
+    
+    
+        &-details {
+            width: 75%;
+            margin: 0 auto;
+        }
+    
+        &-company {
+            text-align: center;
+    
+            h4 {
+                font-size: 3rem;
+                margin-bottom: 5rem;
+            }
+        }
+    
+        &-body {
+            text-align: center;
+            font-size: 2.4rem;
+            line-height: 3rem;
+    
+            p::before {
+                content: '\201C';
+                font-size: 50px;
+                position: relative;
+                color: #ff9800;
+                line-height: 20px;
+                bottom: 15px;
+                right: 5px;
+            }
+    
+            p::after {
+                content: '\201D';
+                font-size: 50px;
+                position: relative;
+                color: #ff9800;
+                line-height: 20px;
+                top: 15px;
+                left: 5px;
+            }
+        }
+    
+        &-footer {
+            text-align: right;
+            font-size: 2rem;
+            font-weight: 100;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.sponsors {
+    margin: 10rem 0;
+
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+
+        img {
+            max-width: 135px;
+            text-align: center;
+            margin: 2rem;
+        }
+    }
+}

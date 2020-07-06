@@ -1,0 +1,64 @@
+.design-steps {
+    margin: 10rem 0;
+
+    .design-wrapper {
+        display: flex;
+        
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 3rem;
+            padding: 2rem;
+            box-shadow: 10px 10px 21px 0px rgba(255, 213, 134, 0.75);
+
+            .design__icon {
+                background: #F38824;
+                padding:30px;
+                border-radius: 50%;
+
+                i {
+                    font-size: 8rem;
+                    color: #fff;
+                }
+            }
+
+            .design__title h5 {
+                font-size: 3rem;
+                
+            }
+
+            .design__content p {
+                font-size: 2rem;
+                text-align: justify;
+                // word-break: break-all;
+            }
+        }
+
+        @media only screen and (max-width: 37.5em) { 
+            .design-wrapper-card {
+                margin-top: 5rem;
+                
+            }
+        };
+    }
+
+    @media only screen and (max-width: 37.5em) { 
+        .design-wrapper {
+            flex-direction: column;
+            
+        }
+    };
+}
+
+.free-button {
+    .ctaButton {
+        background-color: #F38824;
+        border: 1px solid #F38824;
+        padding: 0.75rem 1.25rem;
+        font-size: 2rem;
+        box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+    }
+}
